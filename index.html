@@ -174,7 +174,24 @@ input[type=date]::-webkit-calendar-picker-indicator{filter:invert(.7)}
   #topo .nome{display:none}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
-</style>
+/* ===== Ajuste mobile: mais limpo e organizado ===== */
+@media (max-width:860px){
+  #form{padding:74px 0 84px}
+  .etapa h2{font-size:27px;line-height:1.16}
+  .dica{font-size:13px;margin-top:8px}
+  .bloco{margin-top:20px}
+  .bloco+.bloco{margin-top:20px}
+  .rot{margin-bottom:9px}
+  input[type=text],input[type=tel],input[type=date],input[type=number],textarea{
+    padding:14px 13px;font-size:16px;
+    background:rgba(255,255,255,.045);
+    border:1px solid var(--linha);border-radius:10px}
+  input:focus,textarea:focus{border-color:var(--prata);box-shadow:none}
+  input[type=date]{-webkit-appearance:none;color:var(--osso);min-height:50px}
+  .duo{gap:14px}
+  .tiles{gap:8px}
+  .chip{padding:9px 15px}
+}</style>
 </head>
 <body>
 
